@@ -3,7 +3,7 @@
     
   <v-app-bar color="black" absolute app>
     <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-    <v-toolbar-title class="text-red cursorP" @click="principal()"
+    <v-toolbar-title class="text-red  cursorP" @click="principal()"
       >Netflix Clone</v-toolbar-title
     >
     <v-text-field
@@ -13,7 +13,7 @@
       v-model="searchValue"
       variant="underlined"
       label="Search Movie"
-      class="ml-4"
+      class="mr-4"
     ></v-text-field>
   </v-app-bar>
 
@@ -40,7 +40,7 @@
     <v-container>
       <v-row justify="center">
         <v-card width="500" elevation="0" class="bg-black">
-          <v-card-title class="text-center text-indigo text-h4"
+          <v-card-title class="text-center text-white text-h4 mt-6 mb-6"
             >Popular Movies</v-card-title
           >
           <v-card-text>
@@ -121,6 +121,10 @@
         infoV == true ? "Hide Info" : "Show Info"
       }}</v-btn>
     </v-row>
+    <v-row justify="center">
+      <p>Click in picture to open trailer</p>
+    </v-row>
+
 
     <!-- search result -->
     <v-row v-if="searchValue">
